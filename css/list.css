@@ -1,0 +1,12 @@
+.list__item {
+    background-color: #ffffff;
+    list-style: none;
+    
+}
+
+.list__itemDone {
+    background-color: #ffffff;
+    text-decoration: line-through;
+    list-style: none;
+
+}
