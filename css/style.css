@@ -13,21 +13,3 @@ html {
     background-color: #e8e8e8;
 
 }
-
-
-
-.flex__buttons {
-    
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-
-}
-
-.js-form {
-
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    align-items: center;
-    margin: 10px;
-}
