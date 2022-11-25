@@ -1,0 +1,24 @@
+.section {
+    background-color: white;
+    margin: 10px 0;
+  
+  }
+  
+  .section__header {
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  .section__body {
+    padding: 20px;
+  }
+  
+  .section__task {
+  
+    list-style: none;
+    max-width: 700px;
+    background-color: white;
+    padding-left: 20px;
+    grid-area: 30px 5fr 30px;
+  }
