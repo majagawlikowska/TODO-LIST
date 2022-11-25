@@ -44,14 +44,17 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li
-            <li${task.done ? " class=\"list__itemDone\"" : ""}>
-            <div class="flex__buttons">
-            <button class="js-done"></button>
-            <button class="js-remove">🗑</button>
+            <li class="taskList__item taskList">
+            <button class="js-done taskList__button taskList__button--done">
+             ${task.done ? " ✔" : ""}
+            </button>
+            <span class="taskList${task.done ? " taskList__item--done" : ""}">
             ${task.content}
-            </div>
-            </li>
+             </span>
+           <button class="js-remove taskList__button taskList__button--remove">
+             🗑
+            </button>
+           </li>
             `;
         }
 
@@ -63,13 +66,14 @@ bindEvents();
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
-
-        if (newTaskContent === "") {
-            return;
+        const newTaskElement = document.querySelector(".js-newTask");
+const newTaskContent = newTaskElement.value.trim();
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            newTaskElement.value = "";
         }
 
-        addNewTask(newTaskContent);
+        newTaskElement.focus ();
     };
 
     const init = () => {
