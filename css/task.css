@@ -6,6 +6,17 @@
     align-items: center;
     padding: 10px;
 }
+.taskList__item--done {
+    text-decoration: line-through;
+
+}
+
+.task__done {
+    text-decoration: line-through;
+}
+
+
+
 
 .js-done {
     width: 30px;
