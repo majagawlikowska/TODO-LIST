@@ -26,6 +26,11 @@
 
 }
 
+.taskList__button--done:hover {
+  
+    background-color: #0f930f;  
+}
+
 .taskList__button--remove {
 
     background-color: #ff0000;
@@ -34,5 +39,10 @@
     width: 30px;
     height: 30px;
 
+}
+
+.taskList__button--remove:hover {
+    background-color: #e52a2a;
+    
 }
 

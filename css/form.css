@@ -28,3 +28,9 @@
     padding: 10px;
     margin: 10px;
 }
+
+.form__button:hover {
+    background-color: rgb(35, 185, 185);
+    transform: scale(1.1);
+    transition: 1s;  
+}
