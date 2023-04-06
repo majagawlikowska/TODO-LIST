@@ -1,6 +1,6 @@
 {
     const tasks = [
-        
+    
     ];
 
     const addNewTask = (newTaskContent) => {
@@ -37,7 +37,11 @@
                 toggleTaskDone(index);
             });
         });
-    }
+    };
+
+    const renderTasks = () => {};
+
+    const renderButtons = () => {};
 
     const render = () => {
         let htmlString = "";
@@ -56,9 +60,14 @@
             </button>
            </li>
             `;
-        }
+        };
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+        
+        document.querySelector(".js-stats").innerText = `
+        Liczba wszystkich zadań: ${tasks.length}\n
+        Liczba ukończonych zadań: ${tasks.filter(task => task.done).length}
+        `;
 
 bindEvents();
     };
